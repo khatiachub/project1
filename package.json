@@ -2,5 +2,8 @@
   "dependencies": {
     "react-animated-slider": "^2.0.0",
     "react-slideshow-image": "^4.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
