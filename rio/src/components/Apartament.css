@@ -1,0 +1,52 @@
+.background2{
+    background-image: url('../images/beach.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position:fixed;
+    overflow:scroll;
+}
+.backgroundrio{
+    background-image: url('../images/rioap.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position:fixed;
+    overflow:scroll;
+}
+.backgroundcont{
+    background-image: url('../images/beach.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position:fixed;
+    overflow:scroll;
+}
+*{
+    text-decoration: none;
+}
+body::-webkit-scrollbar {
+  width: 10px;             
+}
+
+body::-webkit-scrollbar-track {
+  background: #E5EBED ; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6AA3A2;
+  border-radius: 10px;
+  border: 3px solid #6AA3A2;
+}
+.currentdot{
+    opacity: 60%;
+}
+.currentimg{
+    border: 1px solid #fff;
+}
+/* responsive */
+@media(max-width:1024px){
+}

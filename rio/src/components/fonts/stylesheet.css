@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Strait';
+    src: url('Strait-Regular.eot');
+    src: url('Strait-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Strait-Regular.woff2') format('woff2'),
+        url('Strait-Regular.woff') format('woff'),
+        url('Strait-Regular.ttf') format('truetype'),
+        url('Strait-Regular.svg#Strait-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

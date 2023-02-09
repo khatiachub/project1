@@ -1,0 +1,315 @@
+.background{
+    background-image: url('./images/rio2.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+.navdiv{
+    display: flex;
+    align-items:center;
+    margin: 0 auto;
+    padding-top: 5vh;
+    max-width: 990px;
+    width: 100%;
+    justify-content:space-between;
+}
+.logo{
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Strait';
+}
+.navigation{
+    max-width: 760px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    align-items: center;
+    margin-left: 18vh;
+}
+.nav-link{
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s linear;
+    font-family: 'Strait';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+    width: 90px;
+    height: 40px;
+}
+.nav-link-apartm{
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s linear;
+    font-family: 'Strait';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+    width: 145px;
+    height: 40px;
+}
+.nav-link-book{
+    color: #fff;
+}
+.nav-link:hover{
+    background-color: #6AA3A2;
+    opacity: 50%;
+}
+.nav-link-apartm:hover{
+    background-color: #6AA3A2;
+    opacity: 50%;
+}
+.currentpage{
+    color: #ffB730;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+    width: 90px;
+    height: 40px;
+}
+.currentpage-apartm{
+    color: #ffB730;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+    width: 140px;
+    height: 40px;
+}
+.currentpage-apartm:hover{
+    background-color: #6AA3A2;
+    opacity: 50%;
+}
+.currentpage:hover{
+    background-color: #6AA3A2;
+    opacity: 50%;
+}
+.line-div{
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    margin-right: 5vh;
+}
+.book-div{
+    width: 150px;
+    height: 30px;
+    background-color:#868686;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Strait';
+}
+.book-div:hover{
+    background-color: rgb(68, 62, 62);
+}
+.wavelinediv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 280px;
+    margin-top: 16vh;
+}
+.header-heading{
+    color: #fff;
+    font-family: 'Josefin Slab';
+}
+.headermainheading{
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    margin-top: 5vh;
+    font-family: 'Strait';
+}
+.wavelineimg{
+    width: 70px;
+    height: 30px;
+    object-fit: contain;
+}
+.burgerdiv{
+    display: none;
+}
+.header-overlay{
+    width: 100%;
+    height: 60px;
+    background-color:#004cb8 ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-right: 30px;
+}
+.header-button{
+    width: 60px;
+    height: 30px;
+    color:#004cb8;
+    background-color: #fff;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.header-button:hover{
+    opacity: 60%;
+}
+.search-input{
+    outline: none;
+    height: 26px;
+    border-radius: 36px;
+    border: 2px solid #ffB730;
+}
+.search-icon{
+    color: #004cb8;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-wraper{
+    position: relative;
+}
+/* responsive */
+@media(max-width:1024px){
+    .navigation,.logo{
+        display: none;
+    }
+    .burgerbar-line{
+        width: 30px;
+        height: 1px;
+        background-color:#6AA3A2 ;
+        margin-top: 6px;
+    }
+    .burgerdiv{
+        width: 250px;
+        height: 100%;
+        background-color: rgb(252, 252, 252);
+        position: fixed;
+        z-index: 1000;
+        display: block;
+        transform:translateX(-100%);
+        transition: 0.5s linear;
+    }
+    .active{
+        transform: translateX(0);
+        transition:  0.5s linear;
+    }
+    .burgerbardiv{
+        width: 50px;
+        height: 40px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4vh;
+        border-radius: 3px;
+        border: 1px solid #6AA3A2;
+    }
+    .burger-navigation{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+        width: 223px;
+        margin: 0 auto;
+    }
+    .burgernav-link{
+        margin-top: 20px;
+        font-size: 18px;
+        color: #868686;
+        transition: 0.3s linear;
+        font-family: 'Strait';
+    }
+    .mixer{
+        color: #ffB730;
+    }
+    .current-page{
+        margin-top: 20px;
+        font-size: 20px;
+        color: #ffB730;
+        transition: 0.3s linear;
+    }
+    .burgernav-link:hover{
+        color:#6AA3A2;
+    }
+    .burger-logo{
+        font-size: 40px;
+        color: #868686;
+        font-family: 'Strait';
+    }
+    .burgerbook-div{
+        margin-top: 20px;
+    }
+    .burgerlogo-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        width: 230px;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    .xicon{
+        color: #868686;
+    }
+    .none{
+        display: none;
+    }
+    .wraper{
+        width: 100%;
+        height: 100%;
+    }
+    .wavelinediv{
+        width: 315px;
+    }
+    .header-heading{
+        font-size: 20px;
+    }
+    .headermainheading{
+        font-size: 50px;
+    }
+    .book-div{
+        width: 80px;
+        margin-right: 4vh;
+        margin-top: -19px;
+        opacity: 90%;
+    }
+}
+@media(max-width:480px){
+    .header-heading{
+        font-size: 17px;
+    }
+    .wavelinediv{
+        width: 250px;
+    }
+    .wavelineimg{
+        width: 40px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .headermainheading{
+        font-size: 40px;
+    }
+    .burgerbardiv{
+        margin-left: 1vh;
+    }
+    .book-div{
+        margin-right: 1vh;
+    }
+    
+
+}
+

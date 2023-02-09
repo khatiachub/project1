@@ -1,0 +1,228 @@
+.formdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    height: 70px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+.checkin-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.formmaindiv{
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30vh;
+    background-color: #fff;
+}
+.formmaindiv-apartm{
+    max-width: 990px;
+    width: 100%;
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.formwraper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+body{
+    background-color:#E5EBED ;
+}
+.search-button{
+    width: 130px;
+    height: 34px;
+    background-color: #6AA3A2;
+    border: none;
+    color: #fff;
+    font-family: 'Josefin Slab';
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid #FFB730;
+}
+.search-button:hover{
+    background-color: #0d3f3d;
+}
+.check-input{
+    width:200px ;
+    height: 30px;
+    margin-top: 5px;
+    outline: none;
+    border: 2px solid #FFB730;
+    border-right: none;
+    transition: 0.3s;
+}
+input{
+    position: relative;
+}
+.check-input:hover{
+    box-shadow: inset 0 0 0 2px #FFB730;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-position: right;
+    background-size: auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 5px;
+    width: auto;
+    filter: invert(50%);
+}
+.check-inputnumb{
+    width: 200px;
+    height: 28px;
+    margin-top: 5px;
+    border: 2px solid #FFB730;
+    border-right: none;
+    outline: none;
+    transition: 0.3s;
+}
+.check-inputnumb:hover{
+    box-shadow: inset 0 0 0 2px #FFB730;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+.checkin-line{
+    max-width: 900px;
+    width: 100%;
+    background-color:#E5EBED ;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.ourrooms{
+    font-size: 35px;
+    color:#868686 ;
+    padding-top: 30px;
+    font-family: 'Josefin Slab';
+}
+
+.label-date{
+    font-size: 13px;
+    color: #4b4a4a;
+    font-family: 'Josefin Slab';
+}
+.adults, .kids{
+    font-size: 13px;
+    color: #4b4a4a;
+    font-family: 'Josefin Slab';
+}
+::-webkit-datetime-edit { padding: 6px; }
+::-webkit-datetime-edit-text { display: none;}
+::-webkit-datetime-edit-month-field { color: #807e7e; }
+::-webkit-datetime-edit-day-field { color: #807e7e; }
+::-webkit-datetime-edit-year-field { color: #807e7e; }
+
+/* responsive */
+@media(max-width:1024px){
+    .formdiv{
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .checkin-line{
+        margin-top: 35px;
+    }
+    .formwraper{
+        display: flex;
+        justify-content: center;
+    }
+    .search-button{
+        width: 100px;
+        margin-top: 20px;
+    }
+    .check-inputnumb{
+        max-width:250px;
+        width: 100%;
+    }
+    .check-input{
+        max-width: 250px;
+        width: 100%;
+    }
+}
+@media(max-width:660px){
+    .formdiv{
+        max-width: 370px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .check-input{
+        width: 182.5px;
+        max-width: 100%;
+        border-right: 2px solid #FFB730;
+        margin-bottom: 5px;
+    }
+    .checkin-inputs{
+        max-width: 370px;
+        width: 100%;
+    }
+    .form{
+        max-width: 370px;
+        width: 100%;
+    }
+    .check-inputnumb{
+        border-right: 2px solid #FFB730;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        max-width: 364px;
+        width: 100%;
+    }
+    .form-input{
+        max-width:370px;
+        width: 100%;
+    }
+    .form-input-date{
+        width: 185px;
+    }
+    .search-button{
+        max-width: 370px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:480px){
+    .form{
+        max-width: 250px;
+        width: 100%;
+    }
+    .formdiv{
+        max-width: 250px;
+        width: 100%;
+    }
+    .check-input{
+        width: 140px;
+        border-right: 2px solid #FFB730;
+    }
+    .form-input{
+        max-width: 250px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .form-input-date{
+        max-width: 125px;
+    }
+    .date-input{
+        max-width: 123px;
+        width: 100%;
+    }
+    .check-inputnumb{
+        max-width: 245px;
+        width: 100%;
+    }
+    .search-button{
+        width: 100%;
+    }
+}

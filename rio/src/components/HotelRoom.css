@@ -1,0 +1,141 @@
+.iconsdiv{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    color: #5a5959;
+}
+.hotelroom-maindiv{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+.hotelroom-wraper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    width: 100%;
+}
+.hotelroom-heading{
+    font-size: 30px;
+    color:#868686 ;
+    margin-top: 20px;
+    font-family: 'Strait';
+}
+.hotelroom-parag{
+    color: #868686;
+    margin-top: 15px;
+    font-family: 'Josefin Slab';
+    max-width: 380px;
+    width: 100%;
+}
+.hotelroom-li{
+    color: #868686;
+    margin-top: 10px;
+    font-family: 'Josefin Slab';
+}
+.hotelroom-button{
+    width: 150px;
+    height: 32px;
+    background-color: #6AA3A2;
+    border: none;
+    border-radius: 1px;
+    color: #fff;
+    margin-top: 32px;
+}
+.hotelroomimg{
+    width: 270px;
+    height: 185px;
+    object-fit: cover;
+}
+.hotelroom-list{
+    margin-left: 17px;
+}
+.hotelroom-line{
+    max-width: 450px;
+    width: 100%;
+    height: 1px;
+    background-color:#E5EBED ;
+    margin-top: 5px;
+}
+.hotelroom-pricediv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hotelroom-price{
+    font-size: 30px;
+    color: #868686;
+    margin-top: 30px;
+    font-family: 'Strait';
+}
+/* responsive */
+@media(max-width:960px){
+    .hotelroom-maindiv{
+        max-width: 600px;
+        width: 100%;
+        align-items:flex-start;
+    }
+    .checkin-line{
+        max-width: 600px;
+        width: 100%;
+    }
+    .hotelroomimg{
+        max-width: 300px;
+        width: 100%;
+    }
+    .hotelroom-wraper{
+        flex-direction: column;
+    }
+    .hotelroom-list, .hotelroom-parag{
+        display: none;
+    }
+}
+@media(max-width:1024px){
+    .hotelroom-maindiv{
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+    .checkin-line{
+        margin-top: 5vh;
+    }
+}
+@media(max-width:650px){
+    .hotelroom-maindiv{
+        flex-direction: column;
+        max-width: 370px;
+        width: 100%;
+    }
+    .checkin-line{
+        max-width: 370px;
+        width: 100%;
+    }
+    .hotelroom-price{
+        display: none;
+    }
+    .hotelroomimg{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+@media(max-width:480px){
+    .hotelroom-maindiv{
+        max-width: 250px;
+        width: 100%;
+    }
+    .checkin-line{
+        max-width: 250px;
+        width: 100%;
+    }
+    .hotelroomimg{
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+
+
