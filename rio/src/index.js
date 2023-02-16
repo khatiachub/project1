@@ -9,6 +9,7 @@ import Book from './components/Book'
 import RoomDescription from './RoomDescription';
 import Root from './Root';
 import './components/fonts/Fonts.css'
+import 'normalize.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
